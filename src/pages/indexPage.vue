@@ -135,11 +135,15 @@ export default {
 
 <style scoped lang="sass">
 .intro
-    height: 75.8rem
+    position: relative
+    display: flex
+     
+    @media (max-width: 767px)
+        justify-content: center
     &__img
-        max-height: 100%
+        min-height: 40rem
         border-radius: 7rem
-        position: absolute
+        max-width: 100%
 
     &__wrap
         display: flex
@@ -149,9 +153,13 @@ export default {
         height: 34.2rem
         width: 42.4rem
         padding-left: 5.2rem
-        position: relative
+        position: absolute
         top: 50%
         transform: translateY(-50%)
+
+        @media (max-width: 767px)
+            padding-left: 0
+            align-items: center
 
     &__heading
         color: #292F36
@@ -198,7 +206,7 @@ export default {
 .project
     &__cards
         display: flex
-        justify-content: space-between
+        justify-content: center
         flex-wrap: wrap
         gap: 5.4rem
 .project-card
@@ -206,6 +214,7 @@ export default {
     width: 55rem
     &__img
         margin-bottom: 2.8rem
+        max-width: 100%
     &__subheading
         color: #292F36
         font-family: DM Serif Display, sans-serif
@@ -235,6 +244,12 @@ export default {
         transition: transform 0.3s ease-in-out
         &:hover
             transform: scale(1.1)
+        & svg
+            // width: 7rem
+            // height: 7rem
+            @media (max-width: 767px)
+                width: 6rem
+                height: 6rem
 
     &:nth-child(4n+1) .project-card__img
         border-top-right-radius: 8rem
@@ -291,9 +306,12 @@ export default {
 .news
     &__cards
         display: flex
-        justify-content: space-between
+        justify-content: center
         flex-wrap: wrap
         gap: 3rem 2.4rem
+
+        // @media (max-width: 767px)
+        // justify-content: center
 
 .news-card
     position: relative
@@ -312,6 +330,7 @@ export default {
         margin-bottom: 0.6rem
         border-top-left-radius: 4.1rem
         border-top-right-radius: 4.1rem
+        max-width: 100%
     &__subheading
         width: 29rem
         color: #292F36

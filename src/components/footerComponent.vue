@@ -50,7 +50,13 @@ export default {
 .footer
     display: flex
     justify-content: space-between
-    gap: 10.1rem
+    gap: 5rem
+
+    @media (max-width: 1024px)
+        flex-wrap: wrap
+        flex-direction: column
+        justify-content: center
+        align-items: center
 
     &__item
         display: flex

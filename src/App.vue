@@ -27,6 +27,14 @@ html
     font-size: 62.5%
     background: #FFFFFF
 
+    @media (max-width: 1024px)
+        font-size: 58%
+
+    @media (max-width: 767px)
+        font-size: 50%
+
+    @media (max-width: 374px)
+        font-size: 40%
 .center
     max-width: 120rem
     padding-left: calc(50% - 60rem)
