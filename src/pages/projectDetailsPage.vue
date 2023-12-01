@@ -74,6 +74,7 @@ export default {
     position: relative
     &__img
         width: 100vw
+        min-height: 24rem
 
 .our-project-blog
     display: flex

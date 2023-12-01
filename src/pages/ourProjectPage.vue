@@ -136,6 +136,7 @@ export default {
     position: relative
     &__img
         width: 100vw
+        min-height: 24rem
     &__wrap
         border-radius: 3.7rem 3.7rem 0rem 0rem
         padding: 4.1rem 7.8rem
@@ -145,6 +146,8 @@ export default {
         bottom: 0
         left: 50%
         transform: translateX(-50%)
+        @media (max-width: 767px)
+            padding: 2.1rem 3.9rem
 
 .breadcrump
     &__item
@@ -188,6 +191,9 @@ export default {
         border: 1px solid #CDA274
         border-radius: 1.8rem
         width: 88rem
+        @media (max-width: 767px)
+            flex-direction: column
+            width: 90vw
     &__btn 
         padding: 2.6rem 6.6rem
         flex-shrink: 0
@@ -205,20 +211,34 @@ export default {
         flex-direction: column
         gap: 2rem
         max-height: 160rem
+        @media (max-width: 767px)
+            max-height: none
+            flex-wrap: nowrap
         &_bathroom
             max-height: 130rem
+            @media (max-width: 767px)
+                max-height: none
         &_kitchen
             max-height: 130rem
+            @media (max-width: 767px)
+                max-height: none
         &_bedroom
             max-height: 160rem 
+            @media (max-width: 767px)
+                max-height: none
         &_livingarea
-            max-height: 130rem 
+            max-height: 130rem
+            @media (max-width: 767px)
+                max-height: none
+        
     &__item
         flex: 0 0 auto
         position: relative
         width: calc(50% - 2rem)
         height: fit-content
         position: relative
+        @media (max-width: 767px)
+            width: auto
     &__img
         width: 100%
         height: auto
@@ -241,6 +261,7 @@ export default {
         line-height: 3.3rem
         letter-spacing: 0.022rem
     &__btn
+        display: flex
         width: 7rem
         height: 7rem
         border-radius: 50%
@@ -251,6 +272,12 @@ export default {
         bottom: 0
         &:hover
             transform: scale(1.1)
+        & svg
+            width: 7rem
+            height: 7rem
+            @media (max-width: 767px)
+                width: 6rem
+                height: 6rem
     &__like
         position: absolute
         top: 0.5rem

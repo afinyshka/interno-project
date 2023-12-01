@@ -107,6 +107,10 @@ export default {
         border-radius: 50%
         border: none
         background: none
+        & svg
+          @media (max-width: 767px)
+          width: 5.5rem
+          height: 5.5rem
     &__page-num
         color: #292F36
         font-family: Jost
@@ -133,5 +137,9 @@ export default {
         height: 5.2rem
         border: none
         border-radius: 50%
-        background: none 
+        background: none
+        & svg
+          @media (max-width: 767px)
+            width: 5.5rem
+            height: 5.5rem
 </style>

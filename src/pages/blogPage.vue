@@ -15,7 +15,7 @@
         <div class="latest__wrap">
             <img src="@/assets/image/Photo-latest.png" alt="interior" class="latest__img">
             <div class="latest__text-box">
-                <h2 class="news-card__subheading">Low Cost Latest Invented Interior Designing Ideas</h2>
+                <h2 class="latest__subheading">Low Cost Latest Invented Interior Designing Ideas</h2>
                 <p class="subtext m-b-30">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae
                     turpis
                     dignissim
@@ -97,6 +97,7 @@ export default {
     position: relative
     &__img
         width: 100vw
+        min-height: 24rem
     &__wrap
         border-radius: 3.7rem 3.7rem 0rem 0rem
         padding: 4.1rem 7.8rem
@@ -106,6 +107,8 @@ export default {
         bottom: 0
         left: 50%
         transform: translateX(-50%)
+        @media (max-width: 767px)
+            padding: 2.1rem 3.9rem
 
 .breadcrump
     &__item
@@ -131,6 +134,7 @@ export default {
 .latest
     &__img
         border-radius: 4rem
+        max-width: 100%
     &__wrap
         position: relative
         display: flex
@@ -140,13 +144,26 @@ export default {
         box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25)
         padding: 2.2rem
         box-sizing: border-box
+        @media (max-width: 1024px)
+            flex-direction: column
     &__text-box
         padding-top: 5rem
+        @media (max-width: 1024px)
+            padding-top: 0
+    &__subheading
+        color: #292F36
+        font-family: DM Serif Display, sans-serif
+        font-size: 2.5rem
+        font-style: normal
+        font-weight: 400
+        line-height: 3.125rem
+        letter-spacing: 0.05rem
+        margin-bottom: 3rem
 
 .news
     &__cards
         display: flex
-        justify-content: space-between
+        justify-content: center
         flex-wrap: wrap
         gap: 3rem 2.4rem
 
@@ -167,6 +184,7 @@ export default {
         margin-bottom: 0.6rem
         border-top-left-radius: 4.1rem
         border-top-right-radius: 4.1rem
+        max-width: 100%
     &__subheading
         width: 28rem
         color: #292F36

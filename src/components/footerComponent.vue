@@ -67,6 +67,8 @@ export default {
             width: 25.8rem
         &:first-child
             width: 39.3rem
+        @media (max-width: 1024px)
+            align-items: center
 
     &__link
         text-decoration: none
@@ -95,7 +97,8 @@ export default {
         line-height: 3.3rem
         letter-spacing: 0.022rem
         margin-bottom: 3.2rem
-        // text-decoration: none
+        @media (max-width: 1024px)
+            text-align: center
     &__subheading
         color: #292F36
         font-family: DM Serif Display, sans-serif

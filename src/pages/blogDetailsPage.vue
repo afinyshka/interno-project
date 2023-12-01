@@ -146,12 +146,18 @@ export default {
     position: relative
     &__img
         width: 100vw
+        min-height: 24rem
 .info-articles
     display: flex
+    flex-direction: row-reverse
     gap: 5.2rem
+    @media (max-width: 1024px)
+        flex-direction: column
     &__img
-        max-width: 100%
+        width: 100%
         border-radius: 6rem
+        @media (max-width: 1024px)
+            width: 100%
 
 .date-breadcrumps
         display: flex
@@ -173,12 +179,5 @@ export default {
             font-style: italic
             color: #CDA274
 
-.info-articles
-    display: flex
-    flex-direction: row-reverse
-    gap: 5.2rem
-    &__img
-        max-width: 100%
-        border-radius: 6rem
   </style>
   

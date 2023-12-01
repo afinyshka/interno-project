@@ -114,6 +114,8 @@ html
     letter-spacing: 0.1rem
     &_left
         text-align: left
+        @media (max-width: 1024px)
+            text-align: center  
 
 .subheading
     color: #292F36

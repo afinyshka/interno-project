@@ -245,8 +245,6 @@ export default {
         &:hover
             transform: scale(1.1)
         & svg
-            // width: 7rem
-            // height: 7rem
             @media (max-width: 767px)
                 width: 6rem
                 height: 6rem
@@ -310,8 +308,6 @@ export default {
         flex-wrap: wrap
         gap: 3rem 2.4rem
 
-        // @media (max-width: 767px)
-        // justify-content: center
 
 .news-card
     position: relative
