@@ -137,13 +137,18 @@ export default {
 .intro
     position: relative
     display: flex
-     
     @media (max-width: 767px)
         justify-content: center
     &__img
         min-height: 40rem
         border-radius: 7rem
         max-width: 100%
+        @media (max-width: 1024px)
+            border-radius: 6rem
+        @media (max-width: 767px)
+            border-radius: 5rem
+        @media (max-width: 374px)
+            border-radius: 4rem
 
     &__wrap
         display: flex
@@ -246,8 +251,8 @@ export default {
             transform: scale(1.1)
         & svg
             @media (max-width: 767px)
-                width: 6rem
-                height: 6rem
+                width: 5rem
+                height: 5rem
 
     &:nth-child(4n+1) .project-card__img
         border-top-right-radius: 8rem
@@ -350,4 +355,7 @@ export default {
         transition: transform 0.3s ease-in-out
         &:hover
             transform: scale(1.1)
+        @media (max-width: 767px)
+            right: 3.1rem
+            bottom: 4.8rem
 </style>

@@ -23,6 +23,9 @@ export default {
   margin: 0
   // box-sizing: border-box
 
+body
+    min-width: 350px
+
 html
     font-size: 62.5%
     background: #FFFFFF
@@ -39,6 +42,19 @@ html
     max-width: 120rem
     padding-left: calc(50% - 60rem)
     padding-right: calc(50% - 60rem)
+    @media (max-width: 1024px)
+        padding-left: 8px
+        padding-right: 8px
+    @media (max-width: 1024px)
+        padding-left: 8px
+        padding-right: 8px
+    @media (max-width: 767px)
+        padding-left: 4px
+        padding-right: 4px
+    @media (max-width: 374px)
+        padding-left: 2px
+        padding-right: 2px
+    
 
 .m-b-08
     margin-bottom: 0.8rem

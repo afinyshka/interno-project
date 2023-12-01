@@ -207,6 +207,9 @@ export default {
         transition: transform 0.3s ease-in-out
         &:hover
             transform: scale(1.1)
+        @media (max-width: 767px)
+            right: 3.1rem
+            bottom: 4.8rem
     &__tag
         padding: 0.8rem 1rem
         border-radius: 0.8rem 0.8rem 0.8rem 0rem
