@@ -80,6 +80,8 @@ export default {
             color: #CDA274
 
     &__links
+        display: flex
+        gap: 5rem
         font-family: Font Awesome 5 Brands, sans-serif
         font-size: 1.8rem
         font-style: normal
@@ -107,6 +109,5 @@ export default {
         font-weight: 400
         line-height: 3.125rem
         margin-bottom: 2.6rem
-.fa-brands
-    margin-right: 5rem
+
 </style>
